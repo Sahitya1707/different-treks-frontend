@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Delicious+Handrawn&display=swap");
+
+.hover-target {
+  display: none;
+  /* visibility: hidden; */
+  /* opacity: 0; */
+}
+.hover-trigger:hover .hover-target {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+.text-stroke {
+  -webkit-text-stroke: 3px #f47a30;
+}
+.font-custom {
+  font-family: "Delicious Handrawn", cursive;
+}
