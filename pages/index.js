@@ -1,11 +1,25 @@
+import Destination from "@/components/destination";
+import GetInTouch from "@/components/get_in_touch";
 import Homepage from "@/components/homepage";
+import OtherPackage from "@/components/other_package";
+import PopularPackage from "@/components/popular_package";
 import Search from "@/components/search";
 import Slider from "@/components/slider";
+import YouCanDo from "@/components/you_can_do";
 import Head from "next/head";
 import Image from "next/image";
+import AOS from "aos";
+import React, { useEffect } from "react";
+
 // const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      duration: 700,
+    });
+  }, []);
   return (
     <>
       <Head>
@@ -15,7 +29,12 @@ export default function Home() {
       </Head>
       <Slider />
       <Search />
-      <Homepage />
+      <Destination />
+      <YouCanDo />
+      <PopularPackage />
+      <OtherPackage />
+      <GetInTouch />
+      {/* <Homepage /> */}
     </>
   );
 }
