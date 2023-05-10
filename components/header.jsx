@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const DropDownComponent = (props) => {
   const {
@@ -21,7 +21,7 @@ const DropDownComponent = (props) => {
     <li className="px-2 mx-2 hover-trigger h-[100%] items-center flex">
       <div className="flex items-center">
         <Link href=""> {name}</Link>
-        <span class="material-symbols-outlined">arrow_drop_down</span>
+        <span className="material-symbols-outlined">arrow_drop_down</span>
       </div>
       <ul className="absolute bg-[white] top-[75px]  w-[250px] border-l-2 border-l-[#6868681e]  hover-target z-[998]">
         {item_1 ? (
@@ -68,10 +68,25 @@ const LanguageList = (props) => {
 
 const Header = () => {
   const [language, setLanguage] = useState(false);
+  const [offset, setOffset] = useState(0);
+  useEffect(() => {
+    const handleScroll = () => {
+      setOffset(window.pageYOffset);
+    };
+    window.addEventListener("scroll", handleScroll);
+  }, []);
+  // console.log(offset);
+  // console.log(window.pageYOffset);
   return (
     <>
-      <header>
-        <nav className="flex justify-between px-10 text-xs h-[4rem] bg-[white] items-center uppercase tracking-wider font-normal border-b-[1px] border-[#f687336c] z-999">
+      <header className="">
+        <nav
+          className={
+            offset < 800
+              ? "sticky flex justify-between px-10 text-xs h-[4rem] bg-[white] items-center uppercase tracking-wider font-normal border-b-[1px] border-[#f687336c] z-999 transition-all ease-in-out duration-1000"
+              : "flex justify-between px-10 text-xs h-[4rem] bg-[white] items-center uppercase tracking-wider font-normal border-b-[1px] border-[#f687336c] z-999 fixed top-0 w-[100%] z-[988] ease-in-out duration-600 transition-all left-0"
+          }
+        >
           <Link href={"/"}>
             <img
               src="/images/logo.png"

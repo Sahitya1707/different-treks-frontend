@@ -45,7 +45,7 @@ const Destination = () => {
     <div
       className="mx-auto w-[95%] max-w-[90rem]"
       data-aos="fade-up"
-      data-aos-once="true"
+      // data-aos-once="true"
     >
       {/* <h2 className="text-2xl pt-6 font-semibold tracking-wide text-[#3E68B1] uppercase text-center ">
         our Destination

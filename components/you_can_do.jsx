@@ -4,7 +4,7 @@ import React from "react";
 const YouCanCard = (props) => {
   return (
     <div className="flex items-center mx-4">
-      <span class="material-symbols-outlined p-5 bg-[#F47A30] rounded-full font-semibold">
+      <span className="material-symbols-outlined p-5 bg-[#F47A30] rounded-full font-semibold">
         {props.icon}
       </span>
       <Link href={`${props.link}`}>

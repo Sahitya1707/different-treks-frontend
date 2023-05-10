@@ -31,7 +31,7 @@ const OtherCard = (props) => {
         </p>
         <div className="mt-4 flex gap-2 ">
           <Link href={`${link}`}>
-            <button className="inline-flex items-center gap-1 rounded-full bg-blue-50 px-2 py-1 text-xs font-semibold text-[#F47A30] hover:bg-[#f47b3031] transition-all duration-100 ease-in">
+            <button className="inline-flex items-center gap-1 rounded-full bg-[#f47b3013] px-2 py-1 text-xs font-semibold text-[#F47A30] hover:bg-[#f47b3031] transition-all duration-100 ease-in">
               Explore
             </button>
           </Link>
