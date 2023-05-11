@@ -83,7 +83,7 @@ const Header = () => {
         <nav
           className={
             offset < 800
-              ? "sticky flex justify-between px-10 text-xs h-[4rem] bg-[white] items-center uppercase tracking-wider font-normal border-b-[1px] border-[#f687336c] z-999 transition-all ease-in-out duration-1000"
+              ? " flex justify-between px-10 text-xs h-[4rem] bg-[white] items-center uppercase tracking-wider font-normal border-b-[1px] border-[#f687336c] z-999 transition-all ease-in-out duration-1000"
               : "flex justify-between px-10 text-xs h-[4rem] bg-[white] items-center uppercase tracking-wider font-normal border-b-[1px] border-[#f687336c] z-999 fixed top-0 w-[100%] z-[988] ease-in-out duration-600 transition-all left-0"
           }
         >
