@@ -59,6 +59,13 @@ const DropDownComponent = (props) => {
     </li>
   );
 };
+const HeaderList = (props) => {
+  return (
+    <li className="px-2 mx-2 flex items-center cursor-pointer">
+      <Link href={`${props.link}`}>{props.name}</Link>
+    </li>
+  );
+};
 const LanguageList = (props) => {
   return (
     <li className="px-4 py-2 border-b-[1px] border-b-[#6868681e] hover:bg-[#d4d4d4] duration-150 transition-all ease-in">
@@ -97,9 +104,10 @@ const Header = () => {
           </Link>
           <div className="flex mr-10 items-center h-[100%]">
             <ul className="flex items-center h-[100%]">
-              <li className="px-2 mx-2 flex items-center cursor-pointer">
+              {/* <li className="px-2 mx-2 flex items-center cursor-pointer">
                 Home
-              </li>
+              </li> */}
+              <HeaderList name="Home" link="/" />
 
               <DropDownComponent
                 name="destination"
@@ -140,8 +148,8 @@ const Header = () => {
                 // link_5=""
               />
 
-              <li className="px-2 mx-2">Contact</li>
-              <li className="px-2 mx-2">About Us</li>
+              <HeaderList name="Contact" link="/" />
+              <HeaderList name="about" link="/" />
             </ul>
             <div>
               <div
