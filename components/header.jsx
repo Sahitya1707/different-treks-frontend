@@ -10,6 +10,7 @@ const DropDownComponent = (props) => {
     item_4,
     item_5,
     item_6,
+    link,
     link_1,
     link_2,
     link_3,
@@ -20,7 +21,7 @@ const DropDownComponent = (props) => {
   return (
     <li className="px-2 mx-2 hover-trigger h-[100%] items-center flex">
       <div className="flex items-center">
-        <Link href=""> {name}</Link>
+        <Link href={`${link}`}> {name}</Link>
         <span className="material-symbols-outlined">arrow_drop_down</span>
       </div>
       <ul className="absolute bg-[white] top-[75px]  w-[250px] border-l-2 border-l-[#6868681e]  hover-target z-[998]">
@@ -102,6 +103,7 @@ const Header = () => {
 
               <DropDownComponent
                 name="destination"
+                link="/destination"
                 item_1="nepal"
                 item_2="india"
                 item_3="tibet"

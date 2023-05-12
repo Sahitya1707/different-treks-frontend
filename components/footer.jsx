@@ -9,7 +9,7 @@ const Footer = () => {
     <>
       <footer
         aria-label="Site Footer"
-        className="bg-white sm-w-[auto] w-[80%] max-w-[90rem] mx-auto text-sm lg:text-base"
+        className="bg-white sm-w-[auto] w-[100%] max-w-[90rem] mx-auto text-sm lg:text-base border-t-[1px] border-[#f687336c] px-10 py-4"
       >
         <div className="grid 2xl:grid-cols-3 lg:grid-cols-3 lg:gap-3 gap-5  w-[100%] md:grid-cols-2 grid-cols-1 sm:gap-y-10 xl:gap-x-18 lg:">
           <div className="  lg:col-auto  ">
@@ -298,7 +298,7 @@ const Footer = () => {
             </div> */}
           <div className="2xl:w-[30rem] col-span-1 lg:w-[25rem] md:w-[15rem] md:mt-0 mt-5 lg:pr-5">
             <p className="font-medium text-gray-900 ">Direction</p>
-            <iframe
+            {/* <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.981153011901!2d85.32326651506159!3d27.686977382800432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6e874e7a91f257f9%3A0x6e226fa5e7c3d1f9!2sBhandari%20and%20Associates!5e0!3m2!1sen!2snp!4v1681885230830!5m2!1sen!2snp"
               width="100%"
               height="300"
@@ -306,7 +306,7 @@ const Footer = () => {
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
               className="mt-6"
-            ></iframe>
+            ></iframe> */}
           </div>
         </div>
 

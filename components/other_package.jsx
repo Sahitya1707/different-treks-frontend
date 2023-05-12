@@ -3,6 +3,18 @@ import React from "react";
 import { PrimaryButton } from "./slider";
 import { PrimaryHeading } from "./destination";
 import PrimaryBtn from "./buttons/primaryBtn";
+export const OtherCardHeading = (props) => {
+  const { name } = props;
+  return (
+    <p
+      className="mb-1 text-xl text-primary-500 uppercase font-bold tracking-wider font-custom "
+      style={{ color: props.color }}
+    >
+      {name}
+    </p>
+  );
+};
+
 const OtherCard = (props) => {
   const { blogName, date, blogDetail, link, writer, image } = props;
   return (
@@ -13,9 +25,8 @@ const OtherCard = (props) => {
         alt={`${blogName}`}
       />
       <div className="p-4">
-        <p className="mb-1 text-xl text-primary-500 uppercase font-bold tracking-wider font-custom text-blue-500">
-          {"Annapurna Trek"}{" "}
-        </p>
+        <OtherCardHeading name="Annapurna Trek" color="#0000ffc4" />
+
         <p className="uppercase font-bold">
           Nepal •{" "}
           <time className="normal-case font-normal">{"10-12 days •"} </time>
