@@ -16,10 +16,10 @@ const OtherPackageCard = (props) => {
         className="aspect-video w-full object-cover"
         alt={`${blogName}`}
       />
+      <p className="mb-1 text-xl text-primary-500 uppercase font-bold tracking-wider font-custom text-[#F47A30] bg-[#CACFD6] h-[4.5rem] pt-2 px-2 ">
+        {"Annapurna Trek"}
+      </p>
       <div className="p-4">
-        <p className="mb-1 text-xl text-primary-500 uppercase font-bold tracking-wider font-custom text-[#F47A30]">
-          {"Annapurna Trek"}{" "}
-        </p>
         <p className="uppercase font-bold">
           Nepal •{" "}
           <time className="normal-case font-normal">{"10-12 days •"} </time>

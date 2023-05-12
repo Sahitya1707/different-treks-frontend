@@ -9,7 +9,7 @@ const Footer = () => {
     <>
       <footer
         aria-label="Site Footer"
-        className="bg-white sm-w-[auto] w-[100%] max-w-[90rem] mx-auto text-sm lg:text-base border-t-[1px] border-[#f687336c] px-10 py-4"
+        className="bg-white sm-w-[auto] w-[100%] max-w-[90rem] mx-auto text-sm lg:text-base border-t-[1px] border-[#f687336c] px-10 py-4 overflow-hidden relative z-[991]"
       >
         <div className="grid 2xl:grid-cols-3 lg:grid-cols-3 lg:gap-3 gap-5  w-[100%] md:grid-cols-2 grid-cols-1 sm:gap-y-10 xl:gap-x-18 lg:">
           <div className="  lg:col-auto  ">

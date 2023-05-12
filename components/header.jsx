@@ -148,7 +148,7 @@ const Header = () => {
                 // link_5=""
               />
 
-              <HeaderList name="Contact" link="/" />
+              <HeaderList name="Contact" link="/contact" />
               <HeaderList name="about" link="/" />
             </ul>
             <div>
