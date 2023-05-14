@@ -32,7 +32,7 @@ const Contact = () => {
     <div className="max-w-[70rem] mx-auto">
       <PrimaryHeading name="Contact Us" />
       <div className=" flex items-center my-8 justify-center  mx-auto w-[100%] pl-10">
-        <div className="mt-10 w-[50%]">
+        <div className=" w-[50%] pl-24">
           <h2 className="font-bold text-3xl tracking-wide font-custom">
             Let's chat.
             <br /> Tell me about your next <br />
@@ -60,7 +60,7 @@ const Contact = () => {
         </div>
         <form action="" className="px-4 w-[50%]">
           <h2 className="font-bold text-3xl tracking-wide font-custom mb-4">
-            Send us a message
+            Send us a message 🚀
           </h2>
 
           <InputForm placeholder="Full Name" />
@@ -74,6 +74,21 @@ const Contact = () => {
             <PrimaryBtn name="Submit" />
           </div>
         </form>
+      </div>
+      <div>
+        <PrimaryHeading name="Our Location" />
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7131.409255106535!2d87.69214823842053!3d26.657938075217306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e591dca1f793c9%3A0xb1f4f38f5f98ccdf!2sAdhikari%20Home!5e0!3m2!1sen!2snp!4v1683960997145!5m2!1sen!2snp"
+            // width="600"
+            // height="450"
+            // style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            className="w-[100%] my-4 h-[26rem]"
+          ></iframe>
+        </div>
       </div>
     </div>
   );

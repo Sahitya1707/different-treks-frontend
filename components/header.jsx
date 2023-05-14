@@ -123,6 +123,7 @@ const Header = () => {
               />
               <DropDownComponent
                 name="pACKAGES"
+                link="/packages"
                 item_1="Trekking"
                 item_2="Expidition"
                 item_3="Peak climbing"
