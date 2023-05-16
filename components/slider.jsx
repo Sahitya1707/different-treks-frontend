@@ -84,7 +84,7 @@ const Slider = () => {
           }}
           modules={[Pagination, Autoplay]}
           autoplay={{
-            delay: 5000,
+            delay: 6000,
             disableOnInteraction: false,
           }}
           loop={true}
@@ -100,23 +100,24 @@ const Slider = () => {
                     className="w-[100%] h-[100%] object-fill absolute top-0 z-[10]"
                   />
                   <span className="w-[100%] h-[100%] bg-[#2c2c2ca9] absolute z-[11]"></span>
-                  <div className="z-[199] absolute top-1/2 left-[100px] transform   w-[70rem] -translate-y-1/2">
+                  <div className="z-[199] absolute xl:top-1/2 xl:left-[100px] transform   -translate-y-1/2 xl:p-0 xl:px-0 px-4 top-[50%]">
                     <h2
                       className="
                 text-[#F47A30]
-                 font-bold tracking-wider text-2xl uppercase mb-2 font-custom
+                 font-bold tracking-wider xl:text-2xl uppercase xl:mb-2 lg:font-han font-han 
+                 lg:text-xl text-sm
                  
                  "
                     >
                       {data.heading}
                     </h2>
-                    <p className="text-white w-[54%] my-2 text-sm tracking-wide mb-10">
+                    <p className="text-white xl:w-[54%] xl:my-2 xl:text-sm text-xs tracking-wide xl:mb-10 my-1 xl:pr-0 pr-6 mb-4">
                       {data.content}
                     </p>
                     <Link href={`${data.link}`}>
-                      <button className="border-2 px-7  border-[white] text-white h-[50px]   tracking-wider text-sm bg-[#3E68B1] hover:transition-all hover:bg-[white] hover:border-[#3E68B1] hover:text-[#3E68B1] font-semibold  rounded flex items-center  flex-row">
+                      <button className="border-2 xl:px-7  border-[white] text-white xl:h-[50px]   tracking-wider xl:text-sm bg-[#3E68B1] hover:transition-all hover:bg-[white] hover:border-[#3E68B1] hover:text-[#3E68B1] font-semibold  rounded flex items-center  flex-row text-xs px-6 h-[40px]">
                         <span> {data.buttonName} </span>
-                        <span class="material-symbols-outlined mx-2 text-sm mt-[5px]">
+                        <span class="material-symbols-outlined mx-2 xl:text-sm mt-[5px] text-xs">
                           arrow_forward
                         </span>
                       </button>

@@ -15,17 +15,19 @@ const PackageCard = (props) => {
         className="aspect-video w-full object-cover"
         alt={`${blogName}`}
       />
-      <div className="p-4">
-        <p className="mb-1 text-xl text-primary-500 uppercase font-bold tracking-wider font-custom text-[#F47A30]">
+      <div className="md:p-4 p-2">
+        <p className="mb-1 text-xl text-primary-500 uppercase font-bold tracking-wider font-mon lg:font-han text-[#F47A30]">
           {"Annapurna Trek"}{" "}
         </p>
-        <p className="uppercase font-bold">
+        <p className="uppercase font-bold text-sm">
           Nepal •{" "}
-          <time className="normal-case font-normal">{"10-12 days •"} </time>
+          <time className="normal-case font-normal text-sm">
+            {"10-12 days •"}{" "}
+          </time>
           <span className="normal-case font-normal mx-2">300$</span>
         </p>
         {/* <h3 className="text-xl font-medium text-gray-900">Hi</h3> */}
-        <p className="mt-1 text-gray-500 h-[6rem] overflow-hidden">
+        <p className="mt-1 text-gray-500 h-[6rem] overflow-hidden text-sm">
           {/* {blogDetail}
            */}
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsa
@@ -47,14 +49,23 @@ const PackageCard = (props) => {
 const PopularPackage = () => {
   return (
     <div
-      className="w-[100%] bg-[#CACFD6] px-20 "
+      className="w-[100%] bg-[#CACFD6] lg:px-20 px-8"
       data-aos="fade-up"
       data-aos-once="true"
     >
       <PrimaryHeading name="popular packages" />
       <div className="mt-10 mb-6  mx-auto pb-7">
         <Swiper
-          slidesPerView={3}
+          breakpoints={{
+            768: {
+              slidesPerView: 2,
+              // slidesPerView: 2,
+            },
+            1280: {
+              slidesPerView: 3,
+            },
+          }}
+          // slidesPerView={3}
           spaceBetween={30}
           modules={[
             Autoplay,
@@ -71,6 +82,9 @@ const PopularPackage = () => {
           }
           loop={true}
           className="mySwiper"
+          // breakpoints={
+
+          // }
         >
           {[1, 2, 3, 4, 5, 6].map((data, i) => {
             return (

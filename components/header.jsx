@@ -19,7 +19,7 @@ const DropDownComponent = (props) => {
     link_6,
   } = props;
   return (
-    <li className="px-2 mx-2 hover-trigger h-[100%] items-center flex">
+    <li className="xl:px-2 xl:mx-2 py-2 px-2 hover-trigger xl:h-[100%] items-center flex ">
       <div className="flex items-center">
         <Link href={`${link}`}> {name}</Link>
         <span className="material-symbols-outlined">arrow_drop_down</span>
@@ -61,7 +61,7 @@ const DropDownComponent = (props) => {
 };
 const HeaderList = (props) => {
   return (
-    <li className="px-2 mx-2 flex items-center cursor-pointer">
+    <li className="xl:px-2 xl:mx-2 py-2 px-2 flex items-center cursor-pointer">
       <Link href={`${props.link}`}>{props.name}</Link>
     </li>
   );
@@ -76,6 +76,7 @@ const LanguageList = (props) => {
 
 const Header = () => {
   const [language, setLanguage] = useState(false);
+  const [menu, setMenu] = useState(true);
   const [offset, setOffset] = useState(0);
   useEffect(() => {
     const handleScroll = () => {
@@ -87,23 +88,29 @@ const Header = () => {
   // console.log(window.pageYOffset);
   return (
     <>
-      <header className="">
+      <header className="xl:static ">
         <nav
           className={
             offset < 800
-              ? " flex justify-between px-10 text-xs h-[4rem] bg-[white] items-center uppercase tracking-wider font-normal border-b-[1px] border-[#f687336c] z-999 transition-all ease-in-out duration-1000"
-              : "flex justify-between px-10 text-xs h-[4rem] bg-[white] items-center uppercase tracking-wider font-normal border-b-[1px] border-[#f687336c] z-999 fixed top-0 w-[100%] z-[988] ease-in-out duration-600 transition-all left-0"
+              ? " flex xl:justify-between xl:px-10 text-sm  xl:h-[4rem] bg-[white] xl:items-center uppercase tracking-wider font-normal border-b-[1px] border-[#f687336c] z-999 transition-all ease-in-out duration-100 xl:flex-row flex-col items-start xl:pl-0 pl-6 w-[100vw] overflow-hidden  xl:text-xs fixed top-0 z-[999] xl:static"
+              : "flex justify-between px-10 text-sm xl:text-xs xl:h-[4rem] bg-[white] xl:items-center uppercase tracking-wider font-normal border-b-[1px] border-[#f687336c] ease-in-out duration-100 transition-all left-0 xl:flex-row flex-col items-start"
+            // z-999 fixed top-0 w-[100%]
+            // z-[988]
           }
         >
           <Link href={"/"}>
             <img
               src="/images/logo.png"
               alt=""
-              className="w-[6rem] h-[4rem] ml-10 cursor-pointer "
+              className="w-[6rem] h-[4rem] xl:ml-10 cursor-pointer xl:my-0 my-4"
             />
           </Link>
-          <div className="flex mr-10 items-center h-[100%]">
-            <ul className="flex items-center h-[100%]">
+          <div className="flex xl:mr-10 items-center h-[100%]">
+            <ul
+              className={`flex xl:items-center xl:h-[100%] xl:flex-row flex-col ${
+                menu ? "h-0 overflow-hidden" : "h-[15rem]"
+              }  transition-all duration-4000 ease-in-out`}
+            >
               {/* <li className="px-2 mx-2 flex items-center cursor-pointer">
                 Home
               </li> */}
@@ -150,17 +157,31 @@ const Header = () => {
               />
 
               <HeaderList name="Contact" link="/contact" />
-              <HeaderList name="about" link="/" />
+              {/* <HeaderList name="about" link="/" /> */}
+              <DropDownComponent
+                name="About Us"
+                link="/about"
+                item_1="The Company"
+                item_2="Why With us?"
+                item_3="FAQ"
+                // item_4="rafting"
+                // item_5="jungle safari"
+                link_1=""
+                link_2=""
+                link_3=""
+                // link_4=""
+                // link_5=""
+              />
             </ul>
             <div>
               <div
-                className="px-2 flex border-2 border-black rounded-xl py-2 items-center hover:bg-[#d4d4d4] hover:transition-all hover:ease-in-out hover:duration-150 transition-all duration-100 ease-in cursor-pointer ml-10"
+                className="xl:px-2 xl:flex border-2 border-black cl:rounded-xl xl:py-2 items-center hover:bg-[#d4d4d4] hover:transition-all hover:ease-in-out hover:duration-150 transition-all duration-100 ease-in cursor-pointer ml-10 justify-center p-2 rounded-full hidden"
                 onClick={() => {
                   setLanguage(!language);
                 }}
               >
-                <p> Languages</p>
-                <span class="material-symbols-outlined ml-2">language</span>
+                <p className="xl:block hidden"> Languages</p>
+                <span class="material-symbols-outlined xl:ml-2">language</span>
               </div>
               {language ? (
                 <ul className="absolute bg-[white] top-[75px]  w-[200px] border-l-2 border-l-[#6868681e] mx-10 z-[998]">
@@ -170,6 +191,29 @@ const Header = () => {
                 </ul>
               ) : null}
             </div>
+          </div>
+          <div className="absolute  xl:hidden right-6 top-8">
+            {menu ? (
+              <span
+                class="material-symbols-outlined  font-semibold text-2xl  cursor-pointer z-[999]"
+                onClick={() => {
+                  setMenu(false);
+                }}
+              >
+                menu
+              </span>
+            ) : (
+              <span
+                class="material-symbols-outlined  font-semibold text-2xl  cursor-pointer "
+                onClick={() => {
+                  setMenu(true);
+                }}
+              >
+                close
+              </span>
+            )}
+
+            {/* <span className="absolute">2</span> */}
           </div>
         </nav>
       </header>

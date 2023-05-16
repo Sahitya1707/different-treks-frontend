@@ -9,6 +9,10 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      mon: "'Montserrat Alternates', sans-serif",
+      han: `"Delicious Handrawn", cursive`,
+    },
     extend: {},
   },
   plugins: [],

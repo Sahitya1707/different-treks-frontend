@@ -6,7 +6,7 @@ export const DestinationBtn = (props) => {};
 const DestinationCard = (props) => {
   const { country, link, image } = props;
   return (
-    <div className="relative h-[16rem] w-[17rem] rounded-xl border-black border-2 overflow-hidden mx-2 my-2">
+    <div className="relative md:h-[16rem] md:w-[17rem] rounded-xl border-black border-2 overflow-hidden md:mx-2 my-2 sm:w-[30rem] sm:h-[20rem] w-[22rem] h-[14rem]">
       <img
         src={`${image}`}
         alt=""
@@ -34,7 +34,7 @@ const DestinationCard = (props) => {
 };
 export const PrimaryHeading = (props) => {
   return (
-    <h2 className="text-2xl pt-6 font-semibold tracking-wide text-[#3E68B1] uppercase text-center ">
+    <h2 className="sm:text-2xl text-xl pt-6 font-semibold tracking-wide text-[#3E68B1] uppercase text-center ">
       {props.name}
     </h2>
   );
@@ -43,7 +43,7 @@ export const PrimaryHeading = (props) => {
 const Destination = () => {
   return (
     <div
-      className="mx-auto w-[95%] max-w-[90rem]"
+      className="mx-auto w-[95%] max-w-[90rem] sm:px-0 px-6"
       data-aos="fade-up"
       // data-aos-once="true"
     >

@@ -7,20 +7,20 @@ const GetInTouch = () => {
   return (
     <>
       <div
-        className="container mx-auto py-4  my-10 p-10"
-        data-aos="fade-up"
-        data-aos-once="true"
+        className="container mx-auto py-4  my-10 xl:px-10"
+        // data-aos="fade-up"
+        // data-aos-once="true"
       >
         <PrimaryHeading name="get in touch" />
-        <div className="w-[100%] m-auto lg:h-[30rem] rounded-xl p-2 my-6 flex lg:flex-row flex-col  gap-4">
-          <div className="bg-[#83a6adf8] lg:h-[100%] lg:w-[40%] w-[100%]lg:rounded-xl  text-[white] relative sm:rounded-2xl sm:h-[25rem]  md:h-[25rem] rounded-lg flex flex-col items-center h-[20rem] pt-5">
+        <div className="w-[100%] m-auto  rounded-xl p-2 my-6 flex lg:flex-row flex-col  xl:gap-4">
+          <div className="bg-[#83a6adf8]  lg:w-[40%] w-[90%] lg:rounded-xl  text-[white] relative sm:rounded-2xl  rounded-lg flex flex-col items-center pt-5 xl:h-[30rem] h-[25rem] mx-auto">
             <img
               src="/images/logo.png"
               alt=""
               className="h-[9rem] w-[12rem] object-fill "
             />
-            <div className="sm:px-10 lg:mt-7 sm:mt-10 mt-10 px-5">
-              <h2 className="lg:text-2xl font-semibold md:text-2xl sm:text-xl tracking-wide text-xl">
+            <div className="sm:px-10 lg:mt-7 sm:mt-10 mt-4 2xl:px-5 px-4">
+              <h2 className="lg:text-2xl font-semibold md:text-2xl sm:text-xl tracking-wide  font-mon text-md">
                 Explore. Discover. Adventure.
               </h2>
               <p className="sm:text-base sm:mt-4 text-xs mt-4">
