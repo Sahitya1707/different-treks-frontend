@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
-import { GrFormNextLink } from "react-icons/gr";
+import { FaAngleRight } from "react-icons/fa";
 
 // Import Swiper styles
 import "swiper/css";
@@ -15,9 +15,7 @@ export const PrimaryButton = (props) => {
     <Link href={`${link}`}>
       <button className="border-2 px-7  border-[white] text-white h-[50px]   tracking-wider text-sm bg-[#3E68B1] hover:transition-all hover:bg-[white] hover:border-[#3E68B1] hover:text-[#3E68B1] font-semibold mt-6 rounded flex items-center  flex-row">
         <span> {name} </span>
-        <span className="mx-2 text-sm ">
-          <GrFormNextLink />
-        </span>
+        <span className="mx-2 text-sm ">{/* <FaAngleRight /> */}</span>
         {/* <span class="material-symbols-outlined mx-2 text-sm mt-[5px]">
           arrow_forward
         </span> */}
@@ -119,11 +117,14 @@ const Slider = () => {
                       {data.content}
                     </p>
                     <Link href={`${data.link}`}>
-                      <button className="md:border-2 xl:px-7  border-[white] text-white xl:h-[50px]   tracking-wider xl:text-sm bg-[#3E68B1] hover:transition-all hover:bg-[white] hover:border-[#3E68B1] hover:text-[#3E68B1] font-semibold  rounded flex items-center  flex-row text-xs px-6 h-[40px] border-1">
+                      <button className="md:border-2 xl:px-7  border-[white] text-white xl:h-[50px]   tracking-wider xl:text-sm bg-[#3E68B1] hover:transition-all hover:bg-[white] hover:border-[#3E68B1] hover:text-[#3E68B1] font-semibold  rounded flex items-center  flex-row text-xs px-6 h-[40px] border-[1px]">
                         <span> {data.buttonName} </span>
-                        <span class="material-symbols-outlined mx-2 xl:text-sm mt-[5px] text-xs">
-                          arrow_forward
+                        <span className="mx-2 text-sm text-white mt-[2px]">
+                          <FaAngleRight />
                         </span>
+                        {/* <span class="material-symbols-outlined mx-2 xl:text-sm mt-[5px] text-xs">
+                          arrow_forward
+                        </span> */}
                       </button>
                     </Link>
                     {/* <PrimaryButton link={`${data.link}`} name={data.buttonName}/> */}
