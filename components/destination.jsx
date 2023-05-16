@@ -15,7 +15,7 @@ const DestinationCard = (props) => {
       {/* <span className="absolute top-0 z-[10] bg-[#29292965] w-[100%] h-[100%]"></span> */}
       <div className="absolute top-1/2  text-sm left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-[11]">
         <p
-          className="uppercase text-2xl font-extrabold tracking-widest my-3 font-custom "
+          className="uppercase text-2xl font-extrabold tracking-widest my-3 font-mon lg:font-han "
           style={{ color: props.textColor }}
         >
           {country}

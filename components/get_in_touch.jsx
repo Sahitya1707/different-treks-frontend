@@ -8,8 +8,8 @@ const GetInTouch = () => {
     <>
       <div
         className="container mx-auto py-4  my-10 xl:px-10"
-        // data-aos="fade-up"
-        // data-aos-once="true"
+        data-aos="fade-up"
+        data-aos-once="true"
       >
         <PrimaryHeading name="get in touch" />
         <div className="w-[100%] m-auto  rounded-xl p-2 my-6 flex lg:flex-row flex-col  xl:gap-4">

@@ -104,7 +104,7 @@ const Slider = () => {
                     <h2
                       className="
                 text-[#F47A30]
-                 font-bold tracking-wider xl:text-2xl uppercase xl:mb-2 lg:font-han font-han 
+                 font-bold tracking-wider xl:text-2xl uppercase xl:mb-2 font-mon lg:font-han 
                  lg:text-xl text-sm
                  
                  "
