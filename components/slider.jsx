@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
+import { GrFormNextLink } from "react-icons/gr";
 
 // Import Swiper styles
 import "swiper/css";
@@ -14,9 +15,12 @@ export const PrimaryButton = (props) => {
     <Link href={`${link}`}>
       <button className="border-2 px-7  border-[white] text-white h-[50px]   tracking-wider text-sm bg-[#3E68B1] hover:transition-all hover:bg-[white] hover:border-[#3E68B1] hover:text-[#3E68B1] font-semibold mt-6 rounded flex items-center  flex-row">
         <span> {name} </span>
-        <span class="material-symbols-outlined mx-2 text-sm mt-[5px]">
-          arrow_forward
+        <span className="mx-2 text-sm ">
+          <GrFormNextLink />
         </span>
+        {/* <span class="material-symbols-outlined mx-2 text-sm mt-[5px]">
+          arrow_forward
+        </span> */}
       </button>
     </Link>
   );
