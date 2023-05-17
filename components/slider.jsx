@@ -86,7 +86,7 @@ const Slider = () => {
           }}
           modules={[Pagination, Autoplay]}
           autoplay={{
-            delay: 6000,
+            delay: 2000,
             disableOnInteraction: false,
           }}
           loop={true}
@@ -119,7 +119,7 @@ const Slider = () => {
                     <Link href={`${data.link}`}>
                       <button className="md:border-2 xl:px-7  border-[white] text-white xl:h-[50px]   tracking-wider xl:text-sm bg-[#3E68B1] hover:transition-all hover:bg-[white] hover:border-[#3E68B1] hover:text-[#3E68B1] font-semibold  rounded flex items-center  flex-row text-xs px-6 h-[40px] border-[1px]">
                         <span> {data.buttonName} </span>
-                        <span className="mx-2 text-sm text-white mt-[2px]">
+                        <span className="mx-2 text-sm  mt-[2px]   hover:transition-all">
                           <FaAngleRight />
                         </span>
                         {/* <span class="material-symbols-outlined mx-2 xl:text-sm mt-[5px] text-xs">

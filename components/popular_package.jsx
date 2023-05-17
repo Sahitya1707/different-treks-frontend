@@ -72,7 +72,7 @@ const PopularPackage = () => {
             // Pagination
           ]}
           autoplay={{
-            delay: 5000,
+            delay: 2000,
             disableOnInteraction: false,
           }}
           pagination={

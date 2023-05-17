@@ -128,21 +128,23 @@ const Header = () => {
                 link_3=""
                 link_4=""
               />
+              <HeaderList name="packages" link="/packages" />
               <DropDownComponent
-                name="pACKAGES"
-                link="/packages"
+                name="activities"
+                link="/"
                 item_1="Trekking"
                 item_2="Expidition"
                 item_3="Peak climbing"
                 item_4="rafting"
                 item_5="jungle safari"
+                item_6="Helicopter Tour"
                 link_1=""
                 link_2=""
                 link_3=""
                 link_4=""
                 link_5=""
               />
-              <DropDownComponent
+              {/* <DropDownComponent
                 name="adventurous"
                 item_1="Paragliding"
                 item_2="Helicopter Tour"
@@ -154,7 +156,7 @@ const Header = () => {
                 link_3=""
                 // link_4=""
                 // link_5=""
-              />
+              /> */}
 
               <HeaderList name="Contact" link="/contact" />
               {/* <HeaderList name="about" link="/" /> */}
