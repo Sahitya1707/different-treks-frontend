@@ -13,7 +13,8 @@ const Index = () => {
           <div className="flex flex-col mb-8 animated fadeIn sm:flex-row">
             <div className="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
               <img
-                className="https://www.telegraph.co.uk/content/dam/Travel/leadAssets/35/50/nepal-village_3550720a.jpg?imwidth=680"
+                className="rounded-lg shadow-xl"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmu9yaj4hnVnzoM3dAW9wRUi5FFPH5-CUAu7RVROM-bQ&s"
                 alt=""
               />
             </div>
@@ -25,26 +26,26 @@ const Index = () => {
                 Design Made Easy
               </h3> */}
               <p className="mt-5 text-lg text-gray-700 text md:text-left">
-                we believe that the journey is just as important as the
-                destination. Our passion for trekking and exploration has led us
-                to create a platform where adventurers of all levels can
-                discover, plan, and embark on unforgettable trekking
-                experiences. Whether you're a seasoned mountaineer or a novice
-                hiker, we're here to inspire and guide you on your quest for
-                breathtaking landscapes and exhilarating challenges.
+                Our passion for trekking and exploration has led us to create a
+                platform where adventurers of all levels can discover, plan, and
+                embark on unforgettable trekking experiences. Whether you're a
+                seasoned mountaineer or a novice hiker, we're here to inspire
+                and guide you on your quest for breathtaking landscapes and
+                exhilarating challenges.
               </p>
             </div>
           </div>
           <div className="flex flex-col mb-8 animated fadeIn sm:flex-row">
             <div className="flex items-center mb-8 sm:w-1/2 md:w-5/12">
               <img
-                className="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS89W2BHjcQiRIvTGqAQ04wImNBWRrNGf4kmw&usqp=CAU"
+                className="rounded-lg shadow-xl"
+                src="https://www.holidify.com/images/cmsuploads/compressed/22043951124_08c344201f_h_20180710001301.jpg"
                 alt=""
               />
             </div>
             <div className="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pl-16">
               <p className="mb-2 text-sm font-semibold leading-none text-left text-[#d68a27] uppercase">
-                Our story
+                Our Story
               </p>
               <h3 className="mt-2 text-2xl sm:text-left md:text-4xl">
                 Founded on 1992
@@ -60,7 +61,7 @@ const Index = () => {
             <div className="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
               <img
                 className="rounded-lg shadow-xl"
-                src="https://unsplash.com/photos/trekker-in-khumbu-valley-on-a-way-to-everest-base-camp-t3AIZ7GLMaU"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZsDS9k87cpcgWUN7kCVXHqJk7y4bg1do7JvcRNZgXTw&s"
                 alt=""
               />
             </div>
@@ -69,13 +70,16 @@ const Index = () => {
                 Our Mission
               </p>
               <h3 className="mt-2 text-2xl sm:text-left md:text-4xl">
-                Let's dive into it
+                Have fun
               </h3>
               <p className="mt-5 text-lg text-gray-700 text md:text-left">
                 At the core of our mission is the belief that nature has the
                 power to heal, inspire, and transform. We strive to facilitate
                 meaningful connections between people and the diverse landscapes
-                our planet has to offer.
+                our planet has to offer. Through carefully curated treks,
+                insightful guides, and a vibrant community, we aim to foster a
+                deep appreciation for the natural world and promote responsible
+                and sustainable trekking practices.
               </p>
             </div>
           </div>
