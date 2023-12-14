@@ -5,7 +5,7 @@ const Index = () => {
   return (
     <>
       <BreedComp
-        image="https://images.unsplash.com/photo-1419640303358-44f0d27f48e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODN8fGxhd3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+        image="https://www.andbeyond.com/wp-content/uploads/sites/5/nepal-village.jpg"
         section="About Us"
       />
       <section className="py-20 bg-white">
@@ -13,8 +13,7 @@ const Index = () => {
           <div className="flex flex-col mb-8 animated fadeIn sm:flex-row">
             <div className="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
               <img
-                className="rounded-lg shadow-xl"
-                src="https://images.unsplash.com/photo-1593115057322-e94b77572f20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                className="https://www.telegraph.co.uk/content/dam/Travel/leadAssets/35/50/nepal-village_3550720a.jpg?imwidth=680"
                 alt=""
               />
             </div>
@@ -26,31 +25,34 @@ const Index = () => {
                 Design Made Easy
               </h3> */}
               <p className="mt-5 text-lg text-gray-700 text md:text-left">
-                Crafting your user experience has never been easier, with our
-                intuitive drag'n drop interface you will be creating beatiful
-                designs in no time.
+                we believe that the journey is just as important as the
+                destination. Our passion for trekking and exploration has led us
+                to create a platform where adventurers of all levels can
+                discover, plan, and embark on unforgettable trekking
+                experiences. Whether you're a seasoned mountaineer or a novice
+                hiker, we're here to inspire and guide you on your quest for
+                breathtaking landscapes and exhilarating challenges.
               </p>
             </div>
           </div>
           <div className="flex flex-col mb-8 animated fadeIn sm:flex-row">
             <div className="flex items-center mb-8 sm:w-1/2 md:w-5/12">
               <img
-                className="rounded-lg shadow-xl"
-                src="https://plus.unsplash.com/premium_photo-1668058723804-d7dcd1ffa4c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                className="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS89W2BHjcQiRIvTGqAQ04wImNBWRrNGf4kmw&usqp=CAU"
                 alt=""
               />
             </div>
             <div className="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pl-16">
               <p className="mb-2 text-sm font-semibold leading-none text-left text-[#d68a27] uppercase">
-                know your data
+                Our story
               </p>
               <h3 className="mt-2 text-2xl sm:text-left md:text-4xl">
-                Optimized For Conversions
+                Founded on 1992
               </h3>
               <p className="mt-5 text-lg text-gray-700 text md:text-left">
-                Backed by data, these templates have been crafted for ultimate
-                optimization. Now, converting your visitors into customers is
-                easier than ever before.
+                Our team is made up of experienced trekkers, travel experts, and
+                tech enthusiasts who came together with a common goal – to make
+                trekking accessible, enjoyable, and safe for everyone.
               </p>
             </div>
           </div>
@@ -58,21 +60,22 @@ const Index = () => {
             <div className="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
               <img
                 className="rounded-lg shadow-xl"
-                src="https://images.unsplash.com/photo-1589578527966-fdac0f44566c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+                src="https://unsplash.com/photos/trekker-in-khumbu-valley-on-a-way-to-everest-base-camp-t3AIZ7GLMaU"
                 alt=""
               />
             </div>
             <div className="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16">
               <p className="mb-2 text-sm font-semibold leading-none text-left text-[#d68a27] uppercase">
-                Easy to customize
+                Our Mission
               </p>
               <h3 className="mt-2 text-2xl sm:text-left md:text-4xl">
-                Make It Your Own
+                Let's dive into it
               </h3>
               <p className="mt-5 text-lg text-gray-700 text md:text-left">
-                All templates and components are fully customizable. You can use
-                these templates to tell your personal story and convey your
-                message.
+                At the core of our mission is the belief that nature has the
+                power to heal, inspire, and transform. We strive to facilitate
+                meaningful connections between people and the diverse landscapes
+                our planet has to offer.
               </p>
             </div>
           </div>

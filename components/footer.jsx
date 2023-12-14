@@ -123,7 +123,7 @@ const Footer = () => {
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
-                    Legal Advice and Consultation
+                    Trekking
                   </a>
                 </li>
 
@@ -132,7 +132,7 @@ const Footer = () => {
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
-                    Litigation and Dispute Resolution
+                    Guide
                   </a>
                 </li>
 
@@ -141,7 +141,7 @@ const Footer = () => {
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
-                    Document Drafting and Review
+                    Cycling
                   </a>
                 </li>
 
@@ -150,7 +150,7 @@ const Footer = () => {
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
-                    Regulatory Compliance
+                    Jungle safari
                   </a>
                 </li>
 
@@ -159,7 +159,7 @@ const Footer = () => {
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
-                    Intellectual Property Protection
+                    Cultural tools
                   </a>
                 </li>
               </ul>
