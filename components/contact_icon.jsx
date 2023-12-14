@@ -25,7 +25,7 @@ const IconMedia = (props) => {
 
 const ContactIcon = () => {
   return (
-    <div className="fixed bottom-5 lg:bottom-10 right-1 lg:right-2 text-white z-[990] text-xl">
+    <div className="fixed bottom-5 lg:bottom-10 right-1 lg:right-2 text-white z-[990] text-xl overflow-hidden">
       {/* <Link href="https://www.facebook.com/" target="_blank">
         <p className="p-2 bg-blue-700 rounded-full mt-2 hover:translate-y-[-6px] hover:transition-all hover:duration-150 hover:ease-in ease-in transition-all duration-150">
           <FaFacebookF />

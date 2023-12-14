@@ -3,7 +3,7 @@ import { PrimaryButton } from "./slider";
 import PrimaryBtn from "./buttons/primaryBtn";
 import { PrimaryHeading } from "./destination";
 
-const SearchDropDown = () => {
+export const SearchDropDown = () => {
   return (
     <div className="xl:mx-1 mx-2 xl:my-0 my-2">
       <p className="text-left sm:text-sm text-xs">Select Destination</p>

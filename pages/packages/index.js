@@ -5,17 +5,18 @@ import { FaCalendarAlt } from "react-icons/fa";
 import Link from "next/link";
 import React, { useState } from "react";
 import ReactPaginate from "react-paginate";
+import { SearchDropDown } from "@/components/search";
 const AllPacakageCard = (props) => {
   return (
     <div
-      className="flex xl:h-[23rem] my-9 items-center xl:w-[100%]  xl:justify-between xl:flex-row flex-col justify-center md:w-[27rem] sm:w-[22rem] mx-auto xl:shadow-none shadow-xl xl:rounded-none rounded-md w-[20rem]"
+      className="flex xl:h-[23rem] my-9 items-center xl:w-[100%]  xl:justify-between xl:flex-row flex-col justify-center md:w-[27rem] sm:w-[22rem] mx-auto xl:shadow-none shadow-sm xl:rounded-none rounded-md w-[18rem]"
       // data-aos="fade-up"
       // data-aos-once="true"
     >
       <img
         src={`${props.image}`}
         alt=""
-        className="h-[20rem] w-[100%] xl:w-[15rem] rounded-md xl:h-[100%]"
+        className="md:h-[20rem] w-[100%] xl:w-[15rem] rounded-md xl:h-[100%] h-[17rem]"
       />
       <div className="xl:p-6 xl:border-r-2 border-[#F47A30]  md:p-2 p-4">
         <h2 className="font-bold md:text-xl tracking-wide xl:mt-2 text-md xl:text-black text-[#F47A30]">
@@ -32,7 +33,7 @@ const AllPacakageCard = (props) => {
         <p className="font-mon font-bold text-sm uppercase tracking-wide text-[#38aeb4] xl:text-black">
           Nepal
         </p>
-        <p className=" tracking-wide  h-[8rem] overflow-hidden text-xs font-semibold text-[#878787] md:w-[25rem] xl:mb-0 mb-2">
+        <p className=" tracking-wide  md:h-[8rem] overflow-hidden text-xs md:font-semibold text-[#878787] md:w-[25rem] xl:mb-0 mb-1 h-[5rem]">
           {props.content}
         </p>
       </div>
@@ -506,10 +507,20 @@ const Index = () => {
   const records = data.slice(firstIndex, lastIndex);
   const npage = Math.ceil(data.length / recordsPerPage);
   const number = [...Array(npage + 1).keys()].slice(1);
+  const [searchValue, setSearchValue] = useState({
+    price: "",
+    destination: "",
+    duration: "",
+    activity: "",
+  });
 
   // console.log(records);
   // console.log(npage);
   console.log(number);
+  const handleSearch = (e) => {
+    setSearchValue({ ...searchValue, [e.target.name]: e.target.value });
+  };
+  console.log(searchValue);
   return (
     <div>
       <BreedComp
@@ -535,7 +546,27 @@ const Index = () => {
           beauty and culture of the Himalayas with us. Book your tour today!
           <br />
           <br />
-          Let's see our all packages:
+          <span className="font-semibold ">Let's see our all packages:</span>
+        </p>
+        <p>
+          <div className="flex my-4 flex-wrap">
+            <SearchDropDown />
+            <SearchDropDown />
+            <SearchDropDown />
+            <div className="mx-2">
+              <p className="text-left sm:text-sm text-xs">Price:</p>
+              <input
+                type="range"
+                min="1000"
+                max="5000"
+                className="cursor-pointer  bg-[#868687]  font-semibold sm:w-[8rem] sm:text-sm  text-xs w-[7rem] opacity-80 hover:opacity-100 transition-all  "
+                name="price"
+                onChange={handleSearch}
+              />
+
+              <span className="mx-2 text-md font-semibold">300$</span>
+            </div>
+          </div>
         </p>
         {records.map((d, i) => {
           return (

@@ -88,12 +88,12 @@ const Header = () => {
   // console.log(window.pageYOffset);
   return (
     <>
-      <header className="xl:static ">
+      <header className="xl:static overflow:hidden">
         <nav
           className={
             offset < 800
-              ? " flex xl:justify-between xl:px-10 text-sm  xl:h-[4rem] bg-[white] xl:items-center uppercase tracking-wider font-normal border-b-[1px] border-[#f687336c] z-999 transition-all ease-in-out duration-100 xl:flex-row flex-col items-start xl:pl-0 pl-6 w-[100vw] overflow-hidden  xl:text-xs fixed top-0 z-[999] xl:static"
-              : "flex justify-between px-10 text-sm xl:text-xs xl:h-[4rem] bg-[white] xl:items-center uppercase tracking-wider font-normal border-b-[1px] border-[#f687336c] ease-in-out duration-100 transition-all left-0 xl:flex-row flex-col items-start"
+              ? " flex xl:justify-between xl:px-10 text-sm  xl:h-[4.7rem] bg-[white] xl:items-center uppercase tracking-wider font-normal border-b-[1px] border-[#f687336c] z-999 transition-all ease-in-out duration-100 xl:flex-row flex-col items-start xl:pl-0 pl-6 w-[100vw] overflow-hidden  xl:text-xs fixed top-0 z-[999] xl:static"
+              : "flex justify-between px-10 text-sm xl:text-xs xl:h-[4.7rem] bg-[white] xl:items-center uppercase tracking-wider font-normal border-b-[1px] border-[#f687336c] ease-in-out duration-100 transition-all left-0 xl:flex-row flex-col items-start"
             // z-999 fixed top-0 w-[100%]
             // z-[988]
           }
@@ -102,7 +102,7 @@ const Header = () => {
             <img
               src="/images/logo.png"
               alt=""
-              className="w-[6rem] h-[4rem] xl:ml-10 cursor-pointer xl:my-0 my-4"
+              className="w-[7rem] h-[5rem] xl:ml-10 cursor-pointer xl:my-0 my-4 lg:pt-2"
             />
           </Link>
           <div className="flex xl:mr-10 items-center h-[100%]">
